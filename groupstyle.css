@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+/* 1. Image with 2px border */
+.bordered-img {
+    border: 2px solid black;
+}
+
+/* 2. Image with definite size (5x5 inches) */
+.fixed-size-img {
+    width: 480px;
+    height: 480px;
+}
+
+/* 3. Image with rounded borders */
+.rounded-img {
+    border-radius: 20px;
+}
+
+/* 4. Image with specific rounded corners */
+.specific-rounded-img {
+    border-radius: 20px 0 0 20px;
+}
+
+/* 5. Image linking to a website */
+.linked-img {
+    width: 300px;
+}
+
+/* 6. Image with float */
+.float-img {
+    float: left;
+    margin-right: 15px;
+    width: 200px;
+}
+
+/* 7. Image with CSS hover effect */
+.hover-img {
+    transition: transform 0.3s;
+}
+
+.hover-img:hover {
+    transform: scale(1.1);
+}
+
+/* 8. Image with box shadow */
+.shadow-img {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* 9. Image with shape-outside */
+.shape-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.shape-img {
+    width: 200px;
+    shape-outside: circle();
+    float: left;
+    margin-right: 15px;
+}
+
+/* 10. Image with another shape-outside */
+.shape-container2 {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.shape-img2 {
+    width: 200px;
+    shape-outside: ellipse();
+    float: left;
+    margin-right: 15px;
+}
+
+/* 11. Image with mask-image */
+.mask-img {
+    width: 300px;  
+    height: auto;
+    mask-image: url("marian.jpg");  
+    -webkit-mask-image: url("marian.jpg");
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+
+    width: 300px;
+    height: auto;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
